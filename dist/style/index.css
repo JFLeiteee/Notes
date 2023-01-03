@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins);
+}
+
+* {
+    font-family: Poppins;
+}
+
+:root {
+    --bgColor: #255989;
+    --baseColor: #4181BB;
+    --fontColor: #36496F;
+    --baseFontcolor: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 2em;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    gap: 1em;
+    background-color: var(--bgColor);
+    color: var(--baseFontcolor);
+}
+
+.title-container {
+    width: 40rem;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: var(--baseColor);
+}
+
+.notes-container {
+    width: 40rem;
+    min-height: 10rem;
+    padding: 0.5em;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    background-color: var(--baseColor);
+}
+
+.create-note, .note {
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.create-note {
+    min-width: 8rem;
+    min-height: 8rem;
+    max-height: 8rem;
+    max-width: 8rem;
+    font-size: 5rem;
+    cursor: pointer;
+    border: solid 1px var(--bgColor);
+    color: var(--baseFontcolor);
+    background-color: var(--bgColor);
+}
+
+.note {
+    min-width: 7rem;
+    min-height: 7rem;
+    max-height: 7rem;
+    max-width: 7rem;
+    resize: none;
+    overflow: hidden;
+}
